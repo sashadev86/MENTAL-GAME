@@ -6,11 +6,20 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/for";
+@import "./components/request";
+@import "./components/format";
+@import "./components/leading";
+@import "./components/revi";
+@import "./components/footer";
+
 
 // тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+// .page__body {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: var(--vh);
+// }

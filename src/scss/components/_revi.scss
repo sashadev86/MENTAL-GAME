@@ -1,0 +1,46 @@
+.revi {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__title {
+    margin-bottom: 35px;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    color: var(--dark--color);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+  }
+
+  &__item {
+    width: 615px;
+    min-height: 340px;
+    padding: 32px;
+    background-image: url(../img/bg__revi.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 70px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+    color: var(--dark--color);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--dark--color);
+  }
+
+
+}

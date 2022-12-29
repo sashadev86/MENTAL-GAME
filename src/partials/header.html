@@ -1,3 +1,67 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container header__container">
+
+    <div class="header__item-left">
+      <svg class="header__logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+      <a href="www.душевныеигры.рф" class="header__link"> MENTAL-GAME </a>
+    </div>
+
+    <nav class="header__nav" data-menu>
+
+      <button class="btn__burger btn-reset" data-menu-close>
+        <svg class="btn__burger-img btn__burger--close">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="header__nav-list list-reset">
+        <li class="header__nav-item">
+          <a class="header__nav-paragraph" href="#about" data-scroll>Об игре</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-paragraph" href="#for" data-scroll>Для кого</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-paragraph" href="#request" data-scroll>Запрос на игру</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-paragraph" href="#format" data-scroll>Формат</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-paragraph" href="#leading" data-scroll>Про ведущую</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-paragraph" href="#revi" data-scroll>Отзывы</a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-paragraph" href="#footer" data-scroll>Контакты</a>
+        </li>
+      </ul>
+      <div class="header__nav-social">
+        <a href="https://www.instagram.com/maria_podenko" class="header__nav-link" target="_blank">
+          <svg class="header__nav-ikon">
+            <use xlink:href="img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+        <a href="https://telegram.me/Maryia_Podenko" class="header__nav-link" target="_blank">
+          <svg class="header__nav-ikon">
+            <use xlink:href="img/sprite.svg#tele"></use>
+          </svg>
+        </a>
+        <a href=" https://api.whatsapp.com/send?phone=79151611144" class="header__nav-link" target="_blank">
+          <svg class="header__nav-ikon">
+            <use xlink:href="img/sprite.svg#what"></use>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <button class="btn__burger btn-reset" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <svg class="btn__burger-img">
+        <use xlink:href="img/sprite.svg#burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>

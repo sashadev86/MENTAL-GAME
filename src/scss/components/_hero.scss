@@ -1,0 +1,33 @@
+.hero {
+
+
+  &__img {
+    width: 100%;
+    background-color: var(--dark-color);;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__wrapper {
+    position: absolute;
+    width: 742px;
+    bottom: 486px;
+  }
+
+  &__title {
+    min-width: 742px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 63px;
+    color: var(--light-color);
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    color: var(--light-color);
+  }
+}
