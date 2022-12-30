@@ -31,6 +31,10 @@
 
   &__desc {
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__img {
@@ -49,6 +53,10 @@
       & {
         font-size: 16px;
       }
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 
