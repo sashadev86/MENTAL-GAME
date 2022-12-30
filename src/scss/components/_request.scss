@@ -9,6 +9,14 @@
     line-height: 63px;
     text-align: center;
     color:var(--dark-color);
+
+    @include mobile {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 19px;
+      text-align: center;
+      color: var(--dark-color);
+    }
   }
 
   &__list {
