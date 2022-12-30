@@ -6,29 +6,29 @@
 
   &__wrapper {
     position: absolute;
-    top: 40%;
+    top: 70%;
 
     @include big-desktop {
       & {
-        top: 27%;
+        top: 50%;
       }
     }
 
     @include tablet {
       & {
-        top: 23%;
+        top: 40%;
       }
     }
 
     @include small-tablet {
       & {
-        top: 15%;
+        top: 34%;
       }
     }
 
     @include mobile {
       & {
-        top: 7%;
+        top: 30%;
       }
     }
   }
