@@ -1,27 +1,71 @@
 .hero {
-
-
   &__img {
     width: 100%;
-    background-color: var(--dark-color);;
-  }
-
-  &__container {
-    position: relative;
+    background-color: var(--dark-color);
   }
 
   &__wrapper {
     position: absolute;
-    width: 742px;
-    bottom: 486px;
+    top: 40%;
+
+    @include big-desktop {
+      & {
+        top: 27%;
+      }
+    }
+
+    @include tablet {
+      & {
+        top: 23%;
+      }
+    }
+
+    @include small-tablet {
+      & {
+        top: 15%;
+      }
+    }
+
+    @include mobile {
+      & {
+        top: 7%;
+      }
+    }
   }
 
   &__title {
-    min-width: 742px;
+    max-width: 742px;
     font-weight: 700;
     font-size: 50px;
     line-height: 63px;
     color: var(--light-color);
+
+    @include tablet {
+      & {
+        max-width: 414px;
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+
+    @include small-tablet {
+      & {
+        font-size: 26px;
+      }
+    }
+
+    @include mobile {
+      & {
+        font-size: 16px;
+      }
+    }
+
+    @include mobile {
+      & {
+        max-width: 224px;
+        line-height: 22px;
+      }
+    }
   }
 
   &__subtitle {
@@ -29,5 +73,18 @@
     font-size: 30px;
     line-height: 43px;
     color: var(--light-color);
+
+    @include small-tablet {
+      & {
+        font-size: 22px;
+      }
+    }
+
+    @include mobile {
+      & {
+        font-size: 12px;
+        line-height: 22px;
+      }
+    }
   }
 }

@@ -2,10 +2,6 @@
   padding-top: 50px;
   padding-bottom: 25px;
 
-  &__container {
-    width: 1245px;
-  }
-
   &__title {
     font-weight: 700;
     font-size: 50px;
@@ -16,6 +12,7 @@
   }
 
   &__subtitle {
+    width: 100%;
     font-weight: 400;
     font-size: 30px;
     line-height: 43px;
@@ -24,6 +21,12 @@
     border: 2px solid var(--blue-color);
     border-radius: 30px;
     color: var(--dark-color);
+
+    @include small-tablet {
+      & {
+        font-size: 26px;
+      }
+    }
   }
 
   &__desc {
@@ -41,6 +44,12 @@
     font-size: 24px;
     line-height: 32px;
     color: var(--dark-color);
+
+    @include small-tablet {
+      & {
+        font-size: 16px;
+      }
+    }
   }
 
   &__fat {
