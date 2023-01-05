@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+
   &__img {
     width: 100%;
     background-color: var(--dark-color);
@@ -6,31 +8,7 @@
 
   &__wrapper {
     position: absolute;
-    top: 70%;
-
-    @include big-desktop {
-      & {
-        top: 50%;
-      }
-    }
-
-    @include tablet {
-      & {
-        top: 40%;
-      }
-    }
-
-    @include small-tablet {
-      & {
-        top: 34%;
-      }
-    }
-
-    @include mobile {
-      & {
-        top: 23%;
-      }
-    }
+    top: 40%;
   }
 
   &__title {
