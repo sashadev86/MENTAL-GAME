@@ -8,7 +8,7 @@
     font-size: 50px;
     line-height: 63px;
     text-align: center;
-    color:var(--dark-color);
+    color: var(--dark-color);
 
     @include mobile {
       font-weight: 700;
@@ -22,6 +22,20 @@
   &__list {
     display: flex;
     justify-content: center;
+
+    @include tablet {
+      & {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+      }
+    }
+
+    @include mobile {
+      & {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
   }
 
   &__item {
@@ -41,6 +55,13 @@
       height: 10px;
       background-color: var(--light-color);
     }
+
+    @include tablet {
+      & {
+        margin-right: 0;
+        width: 100%;
+      }
+    }
   }
 
   &__icon {
@@ -48,25 +69,48 @@
     top: -28%;
     left: 27%;
 
-
     &--many {
       left: 26%;
       top: -23%;
+
+      @include tablet {
+        & {
+          left: 13%;
+        }
+      }
     }
 
     &--life {
       left: 22%;
       top: -27%;
+
+      @include tablet {
+        & {
+          left: 11%;
+        }
+      }
     }
 
     &--health {
       left: 24%;
       top: -26%;
+
+      @include tablet {
+        & {
+          left: 11%;
+        }
+      }
     }
 
     &--dev {
       left: 29%;
       top: -26%;
+
+      @include tablet {
+        & {
+          left: 15%;
+        }
+      }
     }
   }
 
@@ -80,5 +124,4 @@
     text-align: center;
     padding: 5px;
   }
-
 }

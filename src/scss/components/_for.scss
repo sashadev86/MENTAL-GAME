@@ -5,11 +5,8 @@
 
   &__container {
     position: relative;
-
-    // @include mobile {
-    //   background-image: url(../img/for.png);
-    // }
-
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__title {
@@ -31,45 +28,20 @@
 
   &__img {
     position: relative;
-    width: 95%;
-    left: 21%;
 
     @include mobile {
-      position: inherit;
-      width: auto;
+      min-height: 350px;
     }
-  }
-
-  &__wrap {
-    position: relative;
   }
 
   &__list {
     position: absolute;
-    bottom: 250px;
-    left: -3%;
-
-    @include high-desktop {
-      & {
-        bottom: 100px;
-      }
-    }
-
-    @include tablet {
-      & {
-        bottom: 50px;
-      }
-    }
-
-    @include high-tablet {
-      & {
-        bottom: 25px;
-      }
-    }
+    left: 0;
+    top: 50px;
+    padding-left: 15px;
 
     @include mobile {
-      margin-left: 38px;
-      bottom: 15;
+      padding-right: 15px;
     }
   }
 
@@ -101,6 +73,7 @@
     @include mobile {
       & {
         width: 100%;
+        line-height: 20px;
       }
     }
   }
