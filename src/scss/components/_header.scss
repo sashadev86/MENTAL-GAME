@@ -210,9 +210,8 @@
   }
 
   &-close {
-    position: absolute;
-    top: 45px;
-    right: 35px;
+    display: none;
+    z-index: 501;
   }
 
   &--close {

@@ -12,6 +12,7 @@ import { enableScroll } from '../functions/enable-scroll';
     burger?.classList.toggle('burger--active');
     menu?.classList.toggle('menu--active');
     burger.style.display = 'none';
+    closeBtn.style.display = 'block';
 
     if (menu?.classList.contains('menu--active')) {
       burger?.setAttribute('aria-expanded', 'true');
@@ -30,6 +31,7 @@ import { enableScroll } from '../functions/enable-scroll';
     burger.classList.remove('burger--active');
     menu.classList.remove('menu--active');
     burger.style.display = 'block';
+    closeBtn.style.display = 'none';
     enableScroll();
   });
 
@@ -40,6 +42,7 @@ import { enableScroll } from '../functions/enable-scroll';
     burger.classList.remove('burger--active');
     menu.classList.remove('menu--active');
     burger.style.display = 'block';
+    closeBtn.style.display = 'none';
     enableScroll();
   });
 
@@ -50,6 +53,7 @@ import { enableScroll } from '../functions/enable-scroll';
       burger.classList.remove('burger--active');
       menu.classList.remove('menu--active');
       burger.style.display = 'block';
+      closeBtn.style.display = 'none';
       enableScroll();
     });
   });
