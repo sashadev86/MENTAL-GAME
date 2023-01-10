@@ -3,20 +3,7 @@
   padding-bottom: 25px;
 
   &__title {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 63px;
     margin-bottom: 60px;
-    text-align: center;
-    color:var(--dark-color);
-
-    @include mobile {
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 19px;
-      text-align: center;
-      color: var(--dark-color);
-    }
   }
 
   &__wrap-top {
@@ -33,6 +20,9 @@
     padding-bottom: 20px;
     text-align: center;
     color:var(--dark-color);
+
+    @include small-tablet {
+      font-size: 20px;    }
   }
 
   &__list {
@@ -56,6 +46,10 @@
      font-size: 37px;
      line-height: 63px;
      color: var(--dark-color);
+
+     @include small-tablet {
+      font-size: 25px;
+     }
   }
 
   &__wrap-bottom {
@@ -73,6 +67,11 @@
   &__link {
     width: 70px;
     height: 70px;
+
+    @include small-tablet {
+      width: 43px;
+      height: 43px;
+    }
   }
 
   &__danger {

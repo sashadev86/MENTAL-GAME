@@ -3,20 +3,7 @@
   padding-bottom: 25px;
 
   &__title {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 63px;
     margin-bottom: 27px;
-    text-align: center;
-    color: var(--dark-color);
-
-    @include mobile {
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 19px;
-      text-align: center;
-      color: var(--dark-color);
-    }
   }
 
   &__subtitle {
@@ -38,6 +25,7 @@
 
     @include mobile {
       & {
+        padding: 5px;
         font-size: 18px;
         line-height: 26px;
       }

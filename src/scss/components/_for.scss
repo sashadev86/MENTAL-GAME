@@ -10,20 +10,7 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 63px;
     margin-bottom: 22px;
-    text-align: center;
-    color: var(--dark-color);
-
-    @include mobile {
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 19px;
-      text-align: center;
-      color: var(--dark-color);
-    }
   }
 
   &__img {
@@ -37,7 +24,7 @@
   &__list {
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 18%;
     padding-left: 15px;
 
     @include mobile {
