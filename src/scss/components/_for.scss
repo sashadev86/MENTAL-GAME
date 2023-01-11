@@ -27,6 +27,12 @@
     top: 18%;
     padding-left: 15px;
 
+    @include high-tablet {
+      & {
+        top: 15%;
+      }
+    }
+
     @include mobile {
       padding-right: 15px;
     }

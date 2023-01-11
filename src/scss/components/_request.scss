@@ -27,18 +27,21 @@
 
   &__item {
     position: relative;
-    width: 267px;
+    width: 100%;
     min-height: 248px;
     margin-right: 40px;
     border: 2px solid var(--blue-color);
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &::before {
       content: "";
       position: absolute;
       top: -9px;
-      left: 0;
-      width: 100%;
+      left: 20%;
+      width: 60%;
       height: 10px;
       background-color: var(--light-color);
     }
@@ -54,51 +57,12 @@
   &__icon {
     position: absolute;
     top: -28%;
-    left: 27%;
+  }
 
-    &--many {
-      left: 26%;
-      top: -23%;
-
-      @include tablet {
-        & {
-          left: 13%;
-        }
-      }
-    }
-
-    &--life {
-      left: 22%;
-      top: -27%;
-
-      @include tablet {
-        & {
-          left: 11%;
-        }
-      }
-    }
-
-    &--health {
-      left: 24%;
-      top: -26%;
-
-      @include tablet {
-        & {
-          left: 11%;
-        }
-      }
-    }
-
-    &--dev {
-      left: 29%;
-      top: -26%;
-
-      @include tablet {
-        & {
-          left: 15%;
-        }
-      }
-    }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__desc {

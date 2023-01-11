@@ -16,6 +16,7 @@
   &__left, &__right {
     position: relative;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
     width: 615px;
@@ -27,8 +28,8 @@
       content: "";
       position: absolute;
       top: -9px;
-      left: 157px;
-      width: 272px;
+      left: 20%;
+      width: 60%;
       height: 10px;
       background-color: var(--light-color);
     }
@@ -43,7 +44,6 @@
   &__icon {
     position: absolute;
     top: -15%;
-    left: 34%;
   }
 
   &__subtitle {
