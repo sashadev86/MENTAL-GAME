@@ -4,6 +4,12 @@
   &__img {
     width: 100%;
     background-color: var(--dark-color);
+
+    @include mobile {
+      & {
+        height: 300px;
+      }
+    }
   }
 
   &__wrapper {

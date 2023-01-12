@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 150px;
   }
 
   &__left, &__right {
@@ -77,8 +77,8 @@
 
   &__inner {
     width: 611.5px;
-    min-height: 108px;
-    background: var(--perano-color);
+    min-height: 110px;
+    background-color: var(--blue-color);
     border-radius: 0 0 28px 28px;
 
     &-text {
@@ -88,7 +88,7 @@
       font-size: 15px;
       line-height: 25px;
       text-align: center;
-      color: var(--dark-color);
+      color: var(--light-color);
 
       @include mobile {
         padding: 0;

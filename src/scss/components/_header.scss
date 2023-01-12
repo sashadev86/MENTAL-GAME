@@ -64,16 +64,19 @@
 
     @include tablet {
       & {
+        align-items: flex-start;
         width: 45%;
-        // height: 78%;
+        height: 515px;
         right: 0;
         left: auto;
       }
+    }
 
-      @include mobile {
-        & {
-          // height: auto;
-        }
+    @include mobile {
+      & {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(16, 16, 16, 0.98);
       }
     }
 
@@ -83,15 +86,16 @@
 
       @include tablet {
         & {
-          margin-bottom: 20px;
-          padding-top: 55px;
+          padding-top: 0;
+          padding-left: 15px;
           flex-direction: column;
         }
       }
 
       @include mobile {
-        margin-bottom: 55px;
-        margin-left: 10px;
+        margin: 0;
+        padding: 15px;
+        width: 100%;
       }
     }
 
@@ -133,7 +137,7 @@
 
       @include mobile {
         & {
-          margin-bottom: 10px;
+          margin-bottom: 12px;
         }
       }
     }
@@ -146,12 +150,11 @@
       height: 50px;
       stroke: var(--light-color);
 
-      @include small-tablet {
-        justify-content: center;
-      }
-
-      @include mobile {
-        justify-content: center;
+      @include tablet {
+        & {
+          width: 50%;
+          padding-left: 15px;
+        }
       }
     }
 
@@ -202,6 +205,13 @@
     width: 25px;
     height: 25px;
     stroke: rgba(58, 50, 50, 0.8);
+
+    @include mobile {
+      & {
+        width: 18px;
+        height: 18px;
+      }
+    }
   }
 }
 

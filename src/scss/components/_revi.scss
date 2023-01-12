@@ -2,6 +2,21 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
+  &__container {
+    position: relative;
+
+    &-img {
+      position: absolute;
+      left: -100px;
+      bottom: -160px;
+      transform: rotate(45deg);
+      width: 300px;
+      height: 300px;
+      fill: transparent;
+      stroke: var(--blue-02-color);
+    }
+  }
+
   &__title {
     margin-bottom: 35px;
   }
@@ -18,38 +33,57 @@
   }
 
   &__item {
+    position: relative;
     width: 100%;
     min-height: 340px;
     padding: 32px;
-    background-image: url(../img/bg__revi.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 70px;
-  }
+    background-color: var(--perano-color);
+    border-radius: 75px;
 
-  &__subtitle {
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 43px;
-    color: var(--dark--color);
+    &-img {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      fill: transparent;
+      stroke: var(--light-color);
 
-    @include mobile {
-      margin-bottom: 5px;
-      font-size: 22px;
+      &--left {
+        width: 100px;
+        height: 100px;
+        bottom: 5px;
+        left: -15px;
+        transform: rotate(45deg);
+      }
+
+      &--right {
+        top: 30px;
+        right: -50px;
+        transform: rotate(70deg);
+      }
+    }
+
+    &-name {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 43px;
+      color: var(--light-color);
+
+      @include mobile {
+        margin-bottom: 5px;
+        font-size: 22px;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      color: var(--light-color);
+
+      @include mobile {
+        font-size: 16px;
+      }
     }
   }
-
-  &__text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
-    color: var(--dark--color);
-
-    @include mobile {
-      font-size: 16px;
-    }
-  }
-
-
 }
