@@ -52,7 +52,7 @@
   }
 
   &__header {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     padding: 0 5px;
 
     @include mobile {
@@ -123,12 +123,13 @@
   }
 
   &__item {
+
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
 
       @include mobile {
         & {
-          margin-bottom: 5px;
+          margin-bottom: 10px;
         }
       }
     }
