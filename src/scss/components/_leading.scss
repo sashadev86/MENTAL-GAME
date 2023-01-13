@@ -90,7 +90,6 @@
       font-size: 20px;
       line-height: 29px;
       text-align: center;
-      text-transform: uppercase;
       color: var(--dark-color);
 
       @include high-tablet {
@@ -139,7 +138,6 @@
       font-size: 20px;
       line-height: 29px;
       text-align: center;
-      text-transform: uppercase;
       color: var(--dark-color);
 
       &--background {
@@ -165,7 +163,6 @@
         & {
           font-size: 12px;
           line-height: 14px;
-          text-transform: lowercase;
         }
       }
     }
