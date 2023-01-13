@@ -16,6 +16,23 @@
         width: 400px;
         height: 400px;
         transform: rotate(35deg);
+
+        @include big-desktop {
+          & {
+            top: -200px;
+            left: 10px;
+            width: 300px;
+            height: 300px;
+          }
+        }
+
+        @include mobile {
+          & {
+            top: -205px;
+            width: 150px;
+            height: 150px;
+          }
+        }
       }
 
       &-right {
@@ -24,6 +41,15 @@
         width: 250px;
         height: 250px;
         transform: rotate(70deg);
+
+        @include mobile {
+          & {
+            right: -35px;
+            bottom: -35px;
+            width: 100px;
+            height: 100px;
+          }
+        }
       }
     }
   }

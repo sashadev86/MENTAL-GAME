@@ -11,6 +11,15 @@
         width: 300px;
         height: 300px;
         transform: rotate(130deg);
+
+        @include big-desktop {
+          & {
+            top: 20px;
+            right: -10px;
+            width: 150px;
+            height: 150px;
+          }
+        }
       }
     }
   }

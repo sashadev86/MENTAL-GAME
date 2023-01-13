@@ -12,6 +12,24 @@
         width: 400px;
         height: 400px;
         transform: rotate(70deg);
+
+        @include big-desktop {
+          & {
+            left: -40px;
+            bottom: -170px;
+            width: 250px;
+            height: 250px;
+          }
+        }
+
+        @include mobile {
+          & {
+            left: -55px;
+            bottom: -150px;
+            width: 150px;
+            height: 150px;
+          }
+        }
       }
 
       &-right {
@@ -20,6 +38,15 @@
         width: 350px;
         height: 350px;
         transform: rotate(75deg);
+
+        @include mobile {
+          & {
+            top: 20px;
+            right: -60px;
+            width: 150px;
+            height: 150px;
+          }
+        }
       }
     }
   }

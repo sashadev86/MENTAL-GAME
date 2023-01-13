@@ -207,7 +207,14 @@
       &-img {
         width: 25px;
         height: 25px;
-        stroke: rgba(58, 50, 50, 0.8);
+        fill: var(--light-color);
+
+        @include mobile {
+          & {
+            width: 18px;
+            height: 18px;
+          }
+        }
       }
 
       @include mobile {
