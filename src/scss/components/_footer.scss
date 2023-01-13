@@ -89,6 +89,11 @@
       margin-right: 30px;
     }
 
+    @include small-tablet {
+      width: 43px;
+      height: 43px;
+    }
+
   }
 
   &__icon {
