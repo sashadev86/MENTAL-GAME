@@ -2,6 +2,28 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
+  &__container {
+    position: relative;
+
+    &-img {
+      &-left {
+        left: -140px;
+        bottom: -160px;
+        width: 400px;
+        height: 400px;
+        transform: rotate(70deg);
+      }
+
+      &-right {
+        top: -140px;
+        right: -140px;
+        width: 350px;
+        height: 350px;
+        transform: rotate(75deg);
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 115px;
   }
@@ -23,6 +45,7 @@
     min-height: 654px;
     border: 2px solid var(--blue-color);
     border-radius: 30px;
+    background-color: var(--light-color);
 
     &::before {
       content: "";

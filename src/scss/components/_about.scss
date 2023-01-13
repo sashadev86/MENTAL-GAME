@@ -6,6 +6,28 @@
     margin-bottom: 27px;
   }
 
+  &__container {
+    position: relative;
+
+    &-img {
+      &-left {
+        top: -250px;
+        left: -135px;
+        width: 400px;
+        height: 400px;
+        transform: rotate(35deg);
+      }
+
+      &-right {
+        right: -50px;
+        bottom: -90px;
+        width: 250px;
+        height: 250px;
+        transform: rotate(70deg);
+      }
+    }
+  }
+
   &__subtitle {
     width: 100%;
     font-weight: 400;

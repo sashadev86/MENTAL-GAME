@@ -1,6 +1,20 @@
 .footer {
   padding-top: 25px;
 
+  &__container {
+    position: relative;
+
+    &-img {
+      &-right {
+        top: 150px;
+        right: -150px;
+        width: 300px;
+        height: 300px;
+        transform: rotate(130deg);
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 60px;
   }
@@ -8,8 +22,9 @@
   &__wrap-top {
     min-height: 180px;
     margin-bottom: 40px;
+    border-radius: 30px;
     outline: 2px solid var(--perano-color);
-    border-radius: 30px
+    background-color: var(--light-color);
   }
 
   &__text {
@@ -53,7 +68,8 @@
 
   &__wrap-bottom {
     min-height: 250px;
-    outline: 2px solid var(--perano-color);
+    border: 2px solid var(--perano-color);
+    background-color: var(--light-color);
     border-radius: 30px;
   }
 

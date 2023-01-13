@@ -2,6 +2,20 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
+  &__container {
+    position: relative;
+
+    &-img {
+      &-left {
+        top: 30px;
+        left: -115px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(145deg);
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 100px;
   }
@@ -35,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--light-color);
 
     &::before {
       content: "";

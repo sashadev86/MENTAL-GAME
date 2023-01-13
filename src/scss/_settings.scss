@@ -140,3 +140,10 @@ input {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.logoBg {
+  position: absolute;
+  fill: transparent;
+  stroke: var(--blue-02-color);
+  z-index: -1;
+}
