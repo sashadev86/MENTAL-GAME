@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 25px;
+  padding-top: 50px;
 
   &__container {
     position: relative;
@@ -22,18 +22,6 @@
         }
       }
     }
-  }
-
-  &__title {
-    margin-bottom: 60px;
-  }
-
-  &__wrap-top {
-    min-height: 180px;
-    margin-bottom: 40px;
-    border-radius: 30px;
-    border: 2px solid var(--perano-color);
-    background-color: var(--light-color);
   }
 
   &__text {
