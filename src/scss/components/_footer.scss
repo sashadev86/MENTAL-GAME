@@ -1,0 +1,111 @@
+.footer {
+  padding-top: 50px;
+
+  &__container {
+    position: relative;
+
+    &-img {
+      &-right {
+        top: 150px;
+        right: -150px;
+        width: 300px;
+        height: 300px;
+        transform: rotate(130deg);
+
+        @include big-desktop {
+          & {
+            top: 20px;
+            right: -10px;
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-size: 30px;
+    line-height: 43px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:var(--dark-color);
+
+    @include small-tablet {
+      font-size: 20px;    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+  }
+
+  &__inner {
+    text-align: center;
+    min-height: 40px;
+    background: var(--perano-color);
+    border-radius: 0 0 28px 28px;
+    padding: 17px 0;
+  }
+
+  &__phone {
+     width: 370px;
+     font-weight: 700;
+     font-size: 37px;
+     line-height: 63px;
+     color: var(--light-color);
+
+     @include small-tablet {
+      font-size: 25px;
+     }
+  }
+
+  &__wrap-bottom {
+    min-height: 250px;
+    border: 2px solid var(--perano-color);
+    background-color: var(--light-color);
+    border-radius: 30px;
+  }
+
+  &__link{
+    width: 70px;
+    height: 70px;
+
+    &:hover {
+      border-color: red;
+    }
+
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    @include small-tablet {
+      width: 43px;
+      height: 43px;
+    }
+
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+
+
+    @include small-tablet {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  &__danger {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 20px;
+    text-align: center;
+    color: var(--light-color);
+  }
+}

@@ -1,0 +1,140 @@
+.revi {
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  &__container {
+    position: relative;
+
+    &-img {
+      &-left {
+        left: -140px;
+        bottom: -200px;
+        width: 350px;
+        height: 350px;
+        transform: rotate(45deg);
+
+        @include big-desktop {
+          & {
+            left: -45px;
+            bottom: -210px;
+            width: 300px;
+            height: 300px;
+          }
+        }
+
+        @include small-tablet {
+          & {
+            left: -20px;
+            bottom: -120px;
+            width: 150px;
+            height: 150px;
+          }
+        }
+
+        @include mobile {
+          & {
+            bottom: -85px;
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+
+      &-right {
+        top: -110px;
+        right: -180px;
+        width: 400px;
+        height: 400px;
+        transform: rotate(80deg);
+
+        @include big-desktop {
+          & {
+            top: -100px;
+            right: 0px;
+            width: 250px;
+            height: 250px;
+          }
+        }
+
+        @include mobile {
+          & {
+            top: -95px;
+            right: -30px;
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-height: 340px;
+    padding: 32px;
+    background-color: var(--perano-color);
+    border-radius: 75px;
+
+    &-img {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      fill: transparent;
+      stroke: var(--light-color);
+
+      &--left {
+        width: 100px;
+        height: 100px;
+        bottom: 5px;
+        left: -15px;
+        transform: rotate(45deg);
+      }
+
+      &--right {
+        top: 30px;
+        right: -50px;
+        transform: rotate(70deg);
+      }
+    }
+
+    &-name {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 43px;
+      color: var(--light-color);
+
+      @include mobile {
+        margin-bottom: 5px;
+        font-size: 22px;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      color: var(--light-color);
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+
+  &__img {
+    width: 100%;
+    background-color: var(--dark-color);
+
+    @include mobile {
+      & {
+        height: 300px;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 40%;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    max-width: 742px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 63px;
+    color: var(--light-color);
+
+    @include tablet {
+      & {
+        max-width: 414px;
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+
+    @include small-tablet {
+      & {
+        font-size: 26px;
+      }
+    }
+
+    @include mobile {
+      & {
+        font-size: 16px;
+      }
+    }
+
+    @include mobile {
+      & {
+        max-width: 224px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    color: var(--light-color);
+
+    @include small-tablet {
+      & {
+        font-size: 22px;
+      }
+    }
+
+    @include mobile {
+      & {
+        font-size: 12px;
+        line-height: 22px;
+      }
+    }
+  }
+}

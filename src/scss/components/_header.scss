@@ -1,0 +1,243 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__item-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 32px;
+    width: 81px;
+    height: 81px;
+    fill: var(--light-color);
+
+    @include mobile {
+      & {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-transform: lowercase;
+    color: var(--light-color);
+
+    @include mobile {
+      & {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    overflow-y: auto;
+    width: 100%;
+    min-height: 256px;
+    background-color: rgba(16, 16, 16, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+    @include tablet {
+      & {
+        align-items: flex-start;
+        width: 45%;
+        height: 515px;
+        right: 0;
+        left: auto;
+      }
+    }
+
+    @include mobile {
+      & {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(16, 16, 16, 0.98);
+      }
+    }
+
+    &-list {
+      display: flex;
+      padding-top: 80px;
+
+      @include tablet {
+        & {
+          padding-top: 0;
+          padding-left: 15px;
+          flex-direction: column;
+        }
+      }
+
+      @include mobile {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+      }
+    }
+
+    &-paragraph {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 43px;
+      color: rgba(255, 255, 255, 0.5);
+
+      &:hover {
+        color: wheat;
+      }
+
+      @include small-tablet {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 15px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      @include mobile {
+        & {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 12px;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 20px;
+
+      @include small-tablet {
+        margin-bottom: 20px;
+      }
+
+      @include mobile {
+        & {
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    &-social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 200px;
+      height: 50px;
+      stroke: var(--light-color);
+
+      @include tablet {
+        & {
+          width: 50%;
+          padding-left: 15px;
+        }
+      }
+    }
+
+    &-icon {
+      height: 35px;
+      width: 35px;
+
+      @include mobile {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  &__burger {
+    width: 33px;
+    height: 37px;
+
+    @include mobile {
+      & {
+        width: 22px;
+        height: 20px;
+      }
+    }
+
+    &-img {
+      width: 33px;
+      height: 37px;
+      stroke-width: 12%;
+      stroke-linecap: round;
+      stroke: var(--light-color);
+
+      @include mobile {
+        & {
+          width: 20px;
+          height: 22px;
+        }
+      }
+    }
+
+    &-close {
+      display: none;
+      z-index: 501;
+    }
+
+    &-close {
+      width: 25px;
+      height: 25px;
+
+      &-img {
+        width: 25px;
+        height: 25px;
+        fill: var(--light-color);
+
+        @include mobile {
+          & {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+
+      @include mobile {
+        & {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+
+.burger {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu--active {
+  opacity: 1;
+  visibility: visible;
+}

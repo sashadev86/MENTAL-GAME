@@ -1,0 +1,116 @@
+.request {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__container {
+    position: relative;
+
+    &-img {
+      &-left {
+        top: 30px;
+        left: -115px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(145deg);
+
+        @include big-desktop {
+          & {
+            top: -20px;
+            left: -80px;
+          }
+        }
+
+        @include mobile {
+          & {
+            left: -70px;
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+      & {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px;
+      }
+    }
+
+    @include mobile {
+      & {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 90px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-height: 248px;
+    margin-right: 40px;
+    border: 2px solid var(--blue-color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 20%;
+      width: 60%;
+      height: 10px;
+      background-color: var(--light-color);
+    }
+
+    @include tablet {
+      & {
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: -28%;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 145px;
+    padding-top: 10px;
+  }
+
+  &__desc {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,141 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 25px;
+
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__container {
+    position: relative;
+
+    &-img {
+      &-left {
+        top: -250px;
+        left: -135px;
+        width: 400px;
+        height: 400px;
+        transform: rotate(35deg);
+
+        @include big-desktop {
+          & {
+            top: -200px;
+            left: 10px;
+            width: 300px;
+            height: 300px;
+          }
+        }
+
+        @include mobile {
+          & {
+            top: -205px;
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+
+      &-right {
+        right: -50px;
+        bottom: -90px;
+        width: 250px;
+        height: 250px;
+        transform: rotate(70deg);
+
+        @include mobile {
+          & {
+            right: -35px;
+            bottom: -35px;
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    margin-bottom: 37px;
+    text-align: center;
+    border: 2px solid var(--blue-color);
+    border-radius: 30px;
+    color: var(--light-color);
+    background-color: var(--blue-color);
+
+    @include small-tablet {
+      & {
+        font-size: 20px;
+      }
+    }
+
+    @include mobile {
+      & {
+        padding: 5px;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    @include small-tablet {
+      & {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+
+  &__image {
+
+    @include big-desktop {
+      & {
+        width: 100%;
+      }
+    }
+
+    @include small-tablet {
+      & {
+        width: 100%;
+      }
+    }
+  }
+
+  &__text {
+    width: 50%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--dark-color);
+
+    @include big-desktop {
+      & {
+        width: 70%;
+      }
+    }
+
+    @include small-tablet {
+      & {
+        width: 100%;
+        font-size: 18px;
+      }
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__fat {
+    font-weight: 900;
+    color: var(--blue-color);
+  }
+}
